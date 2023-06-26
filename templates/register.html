@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="hzc">
+
+<head>
+	<title>京东商品评论可视化展示系统:: Edison Hu</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Validate Login & Register Forms Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- Meta tag Keywords -->
+
+	<!-- css files -->
+	<link rel="stylesheet" href="/static/assets/css/1style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link href="/static/assets/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Magra:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<!-- //web-fonts -->
+</head>
+
+
+
+
+<body>
+	<!-- title -->
+	<h1>
+		京东商品评论可视化展示系统
+	</h1>
+	<!-- //title -->
+
+	<!-- content -->
+	<div class="container-agille">
+		<div class="formBox level-login level-reg-revers">
+			<div class="box boxShaddow"></div>
+			<div class="box loginBox">
+				<h3>登录</h3>
+				<form class="form" action="/login" method="POST">
+                    {% if message %} {{message}} {% endif %}
+					<div class="f_row-2">
+                        <label for="InputUsername"></label>
+						<input type="text" class="input-field" id="InputUsername" placeholder="Username" name="name" required>
+					</div>
+					<div class="f_row-2 last">
+                        <label for="InputPassword"></label>
+						<input type="password" name="password" id="InputPassword" placeholder="Password" class="input-field" required>
+					</div>
+					<input class="submit-w3" type="submit"   value="登录">
+				</form>
+			</div>
+			<div class="box registerBox wthree">
+				<span class="reg_bg"></span>
+				<h3>注册</h3>
+				<form class="form" action="/register" method="POST">
+                    {% if message %} {{message}} {% endif %}
+					<div class="f_row-2">
+                        <label for="reUsername"></label>
+						<input type="text" class="input-field" id="reUsername" placeholder="Username" name="name" required>
+					</div>
+					<div class="f_row-2 last">
+                        <label for="password1"></label>
+						<input type="password" name="password"  placeholder="Password" id="password1" class="input-field" required>
+					</div>
+					<div class="f_row-2 last">
+                        <label for="password2"></label>
+						<input type="password" name="password"  placeholder="Confirm Password" id="password2" class="input-field" required>
+					</div>
+                    <input class="submit-w3" type="submit"  value="注册">
+				</form>
+			</div>
+			<a href="#" class="regTag icon-add">
+				<i class="fa fa-repeat" aria-hidden="true"></i>
+
+			</a>
+		</div>
+	</div>
+	<!-- //content -->
+
+	<!-- copyright -->
+	<div class="footer-w3ls">
+		<h2>&copy; 2023 京东商品评论可视化展示系统 Design by Edison Hu
+		</h2>
+	</div>
+	<!-- //copyright -->
+
+
+	<!-- js files -->
+	<!-- Jquery -->
+	<script src="/static/assets/js/jquery-2.2.3.min.js"></script>
+	<!-- //Jquery -->
+	<!-- input fields js -->
+	<script src="/static/assets/js/input-field.js"></script>
+	<!-- //input fields js -->
+
+	<!-- password-script -->
+	<script>
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+
+		function validatePassword() {
+			var pass2 = document.getElementById("password2").value;
+			var pass1 = document.getElementById("password1").value;
+			if (pass1 !== pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');
+			//empty string means no validation error
+		}
+	</script>
+	<!-- //password-script -->
+	<!-- //js files -->
+
+
+
+</body>
+
+</html>

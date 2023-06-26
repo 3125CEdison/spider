@@ -1,0 +1,121 @@
+/*table*/
+/*{*/
+/*	width: 100%;                                        !*表格占据整个页面*!*/
+/*	border-spacing: 0;                                  !*单元格边框间距为0*!*/
+/*	box-shadow: 0 1px 1px #ccc;                         !*设置表格外边框阴影,有立体感*!*/
+/*	font-family:'trebuchet MS', 'Lucida sans', Arial;   !*设置字体*!*/
+/*	font-size: 14px;                                    !*设置字体大小14px*!*/
+/*	color: #555;                                        !*设置字体颜色浅灰色*!*/
+/*	width: 40%;                                         !*设置页面宽度占浏览器大小的40%*!*/
+/*	margin: 60px auto;                                  !*页面自适应居中*!*/
+/*}*/
+
+/*.Modbus*/
+/*{*/
+/*	border:solid #ccc 1px;                              !*设置表格外边框*!*/
+/*	border-radius: 10px;                                !*设置表格外边框圆角*!*/
+/*}*/
+
+/*.Modbus td,.Modbus th*/
+/*{*/
+/*	border-right:solid #ccc 1px;                        !*设置表格单元格外边框，只设置右下边框*!*/
+/*	border-bottom: solid #ccc 1px;*/
+/*	padding: 10px;                                      !*设置单元格内边距，单元格内容显得不拥挤*!*/
+/*	text-align: center;                                 !*单元格内容居中*!*/
+/*}*/
+
+/*.Modbus thead*/
+/*{*/
+/*	background-color: #dce9f9;                          !*设置表头背景色*!*/
+/*}*/
+
+/*.Modbus td:last-child,.Modbus th:last-child*/
+/*{*/
+/*	border-right: none;                                 !*去掉表格每一行最后一列的右边框*!*/
+/*}*/
+
+/*.Modbus tr:last-child td*/
+/*{*/
+/*	border-bottom: none;                                !*去掉最后一行中所有单元格的下边框*!*/
+/*}*/
+
+/*!*单元格设置圆角*!*/
+/*.Modbus th:first-child*/
+/*{*/
+/*	border-radius: 10px 0 0 0;*/
+/*	white-space: nowrap;*/
+/*	text-align: center;*/
+/*}*/
+
+/*.Modbus th:last-child*/
+/*{*/
+/*	border-radius: 0 10px 0 0;*/
+/*	white-space: nowrap;*/
+/*	text-align: center;*/
+/*}*/
+
+/*.Modbus tr:last-child td:first-child*/
+/*{*/
+/*	border-radius: 0 0 0 10px;*/
+/*}*/
+
+/*.Modbus tr:last-child td:last-child*/
+/*{*/
+/*	border-radius: 0 0 10px 0;*/
+/*}*/
+
+/*!*鼠标移动至单元格，单元格高亮显示*!*/
+/*.Modbus tr:hover*/
+/*{*/
+/*	background: #fbf8e9;*/
+/*}*/
+
+/*!*分别设置每一行中单元格的宽度*!*/
+/*.item1*/
+/*{*/
+/*	width: 10%;*/
+/*}*/
+
+/*.item2*/
+/*{*/
+/*	width: 10%;*/
+/*}*/
+/*.item3*/
+/*{*/
+/*	width: 50%;*/
+/*}*/
+/*.item4*/
+/*{*/
+/*	width: 30%;*/
+/*}*/
+
+.table-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.comments-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.comments-table th,
+.comments-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.comments-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+.comments-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.comments-table tbody tr:hover {
+  background-color: #ddd;
+}
